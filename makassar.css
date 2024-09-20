@@ -1,0 +1,423 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    margin: 0 100px;
+    background-image: url('sarr.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 100vh;
+}
+
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: rgb(245, 234, 234); /* atau warna latar belakang yang Anda inginkan */
+    box-shadow: 0 2px 5px rgba(51, 5, 5, 0.1); /* Tambahkan bayangan halus */
+    z-index: 1000; /* MeSmastikan header selalu di atas konten lain */
+}
+
+html{
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px;
+}
+
+
+
+
+main{
+    padding-top: 80px;
+}
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.nav a:hover{
+    background-color: #520909;
+    color: white;
+    border-radius: 20px;
+}
+
+.logo h1 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.logo b {
+    color: red;
+}
+
+.nav ul {
+    display: flex;
+    list-style: none;
+}
+
+.nav ul li {
+    margin-right: 30px;
+}
+
+.nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    font-family: sans-serif;
+    font-size: 17px;
+}
+
+
+
+.signin, .signup {
+    padding: 10px 20px;
+    cursor: pointer;
+    font-weight: 600;
+   
+}
+
+.signin {
+    background: transparent;
+    border: none;
+    color: black;
+}
+
+.signup {
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.hero-content {
+    flex: 1;
+}
+
+.hero-content h1 {
+    font-size: 45px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.hero-content p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    color: white;
+}
+
+.btn {
+    background-color: red;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.hero-image {
+    flex: 1;
+    text-align: right;
+}
+
+.hero-image img {
+    max-width: 100%;
+    border-radius: 50%;
+}
+
+.popular-dishes {
+    margin-top: 50px;
+}
+
+.popular-dishes h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.dish-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.dish-card {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+}
+
+.dish-card img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.dish-card h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.dish-card p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.dish-card .price {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.add-btn {
+    background-color: #FF6B35;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+
+
+/* Gaya baru untuk bagian Tentang Kami */
+.tentang-kami {
+    background-color: rgba(94, 5, 5, 0.8);
+    padding: 70px;
+    border-radius: 10px;
+    margin-top: 50px;
+}
+
+.tentang-kami h2 {
+    font-size: 32px;
+    color: white;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.tentang-kami p {
+    font-size: 18px;
+    color: white;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.anggota-tim {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+   
+}
+
+.anggota {
+    text-align: center;
+    margin-bottom: 20px;
+   
+}
+
+.anggota img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.anggota h3 {
+    font-size: 20px;
+    color: white;
+    margin-bottom: 5px;
+}
+
+
+/*Menu*/
+
+.menu-section {
+    background-color: whitesmoke;
+    padding: 40px 0;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 30px;
+    color: rgb(92, 8, 8);
+}
+
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.menu-item {
+    background-color: rgb(112, 21, 21);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.menu-item:hover {
+    transform: translateY(-5px);
+}
+
+.menu-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.menu-item-content {
+    padding: 20px;
+}
+
+.menu-item h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.menu-item p {
+    font-size: 14px;
+    color: white;
+    margin-bottom: 15px;
+}
+
+.menu-item-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.price {
+    font-size: 18px;
+    font-weight: bold;
+    color: orange;
+}
+
+.rating {
+    color: #ffc107;
+}
+
+.order-btn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: rgb(35, 3, 3);
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.order-btn:hover {
+    background-color: red;
+}
+
+      /*GALERY*/
+
+
+
+.video-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #520909;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+video {
+    width: 100%;
+    border-radius: 10px;
+   
+}
+
+         /*Reservations*/
+
+     .Reservations{
+            margin-top: 100px;
+            padding: 20px;
+            background-color: white;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        label {
+            display: block;
+            margin: 10px 0 5px;
+        }
+        
+        input {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            padding: 10px 15px;
+            background-color: red;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        
+        button:hover {
+            background-color: #06b92a;
+        }
+        
+footer {
+    background-color: #343a40; /* Warna latar belakang untuk footer */
+    color: #ffffff; /* Warna teks putih */
+    padding: 15px;
+    text-align: center; /* Pusatkan teks di footer */
+    border-radius: 0 0 8px 8px; /* Sudut membulat hanya di bagian bawah */
+}
+
+footer p {
+    margin: 0; /* Menghapus margin default */
+    font-size: 14px;
+}
